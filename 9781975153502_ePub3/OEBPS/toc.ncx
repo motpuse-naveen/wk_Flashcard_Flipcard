@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+	<head>
+		<meta name="dtb:uid" content="978-1-975153-50-2"/>
+		<meta name="dtb:depth" content="2"/>
+		<meta name="dtb:totalPageCount" content="0"/>
+		<meta name="dtb:maxPageNumber" content="0"/>
+	</head>
+	<docTitle><text>Hematology Rapid Review, 1e</text></docTitle>
+	<docAuthor><text>Utkarsh H. Acharya, DO, FACP and Tejaswini Dhawale, MD</text></docAuthor>
+	<navMap>
+		<navPoint id="nav-1" playOrder="1">
+			<navLabel><text>Cover</text></navLabel>
+			<content src="cvi.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-2" playOrder="2">
+			<navLabel><text>Title Page</text></navLabel>
+			<content src="tp.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-3" playOrder="3">
+			<navLabel><text>Copyright</text></navLabel>
+			<content src="cop.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-4" playOrder="4">
+			<navLabel><text>Contributors</text></navLabel>
+			<content src="cont.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-5" playOrder="5">
+			<navLabel><text>Foreword</text></navLabel>
+			<content src="fwd.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-6" playOrder="6">
+			<navLabel><text>Abbreviations</text></navLabel>
+			<content src="abbr.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-7" playOrder="7">
+			<navLabel><text>Contents</text></navLabel>
+			<content src="toc.xhtml"/>
+		</navPoint>
+		<navPoint class="chapter" id="ch001" playOrder="8">
+			<navLabel><text>1. Hematopoietic System</text></navLabel>
+			<content src="Chapter01/index.xhtml"/>
+		</navPoint>
+		<navPoint class="chapter" id="ch002" playOrder="9">
+			<navLabel><text>2. Coagulation</text></navLabel>
+			<content src="Chapter02/index.xhtml"/>
+		</navPoint>
+		<navPoint class="chapter" id="ch003" playOrder="10">
+			<navLabel><text>3. Hematologic Neoplastic Disorders</text></navLabel>
+			<content src="Chapter03/index.xhtml"/>
+		</navPoint>
+		<navPoint class="chapter" id="ch004" playOrder="11">
+			<navLabel><text>4 Transfusion Medicine</text></navLabel>
+			<content src="Chapter04/index.xhtml"/>
+		</navPoint>
+		<navPoint class="chapter" id="ch005" playOrder="12">
+			<navLabel><text>5. Hematopoietic Cell Transplantation (HCT)</text></navLabel>
+			<content src="Chapter05/index.xhtml"/>
+		</navPoint>
+	</navMap>
+<pageList>
+<pageTarget type="normal" id="pagetargeti" value="i" playOrder="13"><navLabel><text>i</text></navLabel><content src="tp.xhtml#pagei"/></pageTarget>
+<pageTarget type="normal" id="pagetargetii" value="ii" playOrder="14"><navLabel><text>ii</text></navLabel><content src="cop.xhtml#pageii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetiii" value="iii" playOrder="15"><navLabel><text>iii</text></navLabel><content src="cont.xhtml#pageiii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetiv" value="iv" playOrder="16"><navLabel><text>iv</text></navLabel><content src="cont.xhtml#pageiv"/></pageTarget>
+<pageTarget type="normal" id="pagetargetv" value="v" playOrder="17"><navLabel><text>v</text></navLabel><content src="fwd.xhtml#pagev"/></pageTarget>
+<pageTarget type="normal" id="pagetargetvi" value="vi" playOrder="18"><navLabel><text>vi</text></navLabel><content src="abbr.xhtml#pagevi"/></pageTarget>
+<pageTarget type="normal" id="pagetargetvii" value="vii" playOrder="19"><navLabel><text>vii</text></navLabel><content src="abbr.xhtml#pagevii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetviii" value="viii" playOrder="20"><navLabel><text>viii</text></navLabel><content src="toc.xhtml#pageviii"/></pageTarget>
+</pageList>
+</ncx>

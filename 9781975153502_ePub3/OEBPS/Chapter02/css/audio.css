@@ -1,0 +1,85 @@
+.apbox{
+    width:168px;
+    height:30px;
+    box-sizing:border-box;
+    border:1px solid #007098;
+    border-radius:3px;
+}
+.apbox .play{
+    float:left;
+    width:28px;
+    height:28px;
+    /* background: url(../images/AP1_buttons.png) 0px 0px no-repeat; */
+    cursor:pointer;
+}
+.apbox .play:hover{
+    background-position: -28px 0px;
+    }
+
+    .apbox .pause:hover{
+    background-position: -28px -28px;
+    }
+
+    .apbox .replay:hover{
+    background-position: -28px -56px;
+    }
+/*.apbox .play:hover{
+    background: url(../images/AP1_buttons.png) -28px 0px no-repeat;
+}
+*/.apbox .pause{
+    float:left;
+    width:28px;
+    height:28px;
+    /* background: url(../images/AP1_buttons.png) 0px -28px no-repeat; */
+    /*background: url(../images/AP1_buttons.png) 0px -0px no-repeat;*/
+
+    cursor:pointer;
+}
+/*.apbox .pause:hover{
+    background: url(../images/AP1_buttons.png) -28px -28px no-repeat;
+}
+*/.apbox .slider{
+    float:left;
+    margin-left:5px;
+    width:100px;
+    height:28px;    
+}
+.apbox .slider .sliderbg{
+    width:90px;
+}
+.apbox .slider .sliderbg .sliderline{
+    margin-top:13px;
+    margin-left:4px;
+    width:inherit;
+    height:2px;
+    background:#007098;
+}
+.apbox .slider .sliderbg .sliderdot {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid #007098;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 9px;
+  position: relative;
+  top: -6px;
+  width: 9px;
+}
+.apbox .slider .sliderbg .sliderdot:hover{
+    background: #4095b4;
+}
+.apbox .replay{
+    float:right;
+    width:28px;
+    height:28px;
+    /* background: url(../images/AP1_buttons.png) 0px -56px no-repeat; */
+    /*cursor:pointer;*/
+    pointer-events: none;
+}
+.replay:hover{
+    /*background: url(../images/AP1_buttons.png) -28px -56px no-repeat;*/
+}
+.inactive{
+    /* background:rgba(0, 0, 0, 0) url("../images/AP1_buttons.png") no-repeat scroll -28px -56px !important; */
+}
+
+/*       audio bar end        */

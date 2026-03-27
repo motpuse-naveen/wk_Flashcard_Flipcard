@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:xi="http://www.w3.org/2003/XInclude" lang="en">
+    <head>         
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0"/>
+	<title>Flash Card</title>
+	<meta charset="UTF-8"/> 
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.flip.js"></script>
+	<script src="js/flip.js"></script>
+	<script src="js/preloader.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/activity.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#card").flip({	        
+	        reverse: true,
+	        trigger:"manual"  
+	      });
+		});
+	</script>
+</head>
+<body>
+	<main id="mainConatiner" role="main">
+		<header id="headerText">
+			<h1 class="headerText">Hematopoietic System</h1>
+		</header>
+		<section id="root-app" role="application">	
+			<section id="contentHolder">	
+				<section id="chkView" >
+					<section id="TermRB" data-type="Term" data-itemid='0'>
+							<input class="tabindex flash_RD_btn" id="Term_radio" type="radio" name="flashRadio" data-type="Term" data-itemid="0" checked="checked" aria-label="Question, to change the selection press up or down arrow." /> 
+		                    <span class="radio checked"></span>
+		                    <label for="Term_radio">Question</label>
+		            </section>
+
+		            <section id="DefinationRB" data-type="Defination" data-itemid='0'>
+		            		<input  class="tabindex flash_RD_btn" id="Defination_radio" type="radio" name="flashRadio" data-type="Defination" data-itemid="0" aria-label="Answer, to change the selection press up or down arrow."/> 
+		                    <span class="radio"></span>
+		                    <label for="Defination_radio">Answer</label>
+		            </section>
+	        	</section>		
+	        	<section id="card" class="card">
+	        		<button role="button" id="next" class="tabindex" data-type="Term" aria-label="To move next item, press the Enter or Spacebar key."><img src="images/next-arrow.svg" alt="" /></button>
+	    			<section id="cardFrontSide" class="front card" aria-hidden="false">    				
+	    			        <section class="cardContent scrollbar" >		        				        	
+	    			        	<section id="imageHolder" class="term-img-holder"></section>		        			
+				        		<section id="termInfo" class="term-info" role="region" aria-live="polite"></section>
+				        		<section id="liveInfo" style="opacity:0;height: 0px;width: 0px;text-indent:-999999" role="region" aria-live="polite"></section>
+	    			        </section>  					
+								        				        		
+			        		<section class="clear"></section>
+			        		<section>
+		        				<span id="read" class="readMore tabindex" data-itemid='0' aria-label="Read more information">Read more</span>
+		        			</section>		        	
+			        		<button role="button" id="flipCardBtnf" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term">
+				        		<span id="flipCardf" class="flipCard" data-type="Term"><img src="images/flip-iconBack.svg" alt="" /></span>
+				        		<span id="flipf" class="flip">Flip Card</span>
+		        			</button>
+		        			
+					  </section>
+					   <section id="cardBackSide" class="back card" aria-hidden="true">
+					        <section class="cardContentb scrollbar" id="style-1">			
+						  		<section id="imageHolderb" class="defn-img-holder"></section>
+								 			  
+			        			<section id="defnInfo" class="defn-info" role="region" aria-live="polite"></section>	
+					        </section>
+		        			<section>
+		        				<span id="read1" class="readMore tabindex" data-itemid='0' aria-label="Read more information" aria-hidden="true">Read more</span>
+		        			</section>
+		        			<button role="button" id="flipCardBtnb" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term" aria-hidden="true">
+				        		<span id="flipCardb" class="flipCard" data-type="Term"><img src="images/flip-iconBack.svg" alt="" /></span>
+				        		<span id="flipb" class="flip">Flip Card</span>
+		        			</button>
+		        			
+					  </section>
+					 <button role="button" id="previous" class="tabindex disabled" data-type="Term" aria-label="To move previous item, press the Enter or Spacebar key."><img src="images/back-arrow.svg" alt="" /></button>   			
+	        	</section> 
+	        	        	
+			</section>		
+			<footer id="footer" class="headerFooter">
+				<section>
+					<button role="button" id="shuffleCardsBtn" class="tabindex" data-type="Term" aria-label="To shuffle the Cards, press the Enter or Spacebar key."><img src="images/suffle-btn.svg" alt="" /></button>
+			        <span id="shuffle">Shuffle Cards</span>
+		        	<p id="count" class=""><span id="currentCard"></span> of <span id="totalCards"></span> Cards</p>	
+				</section>							
+			</footer>
+		</section>
+	</main>
+</body>
+</html>
