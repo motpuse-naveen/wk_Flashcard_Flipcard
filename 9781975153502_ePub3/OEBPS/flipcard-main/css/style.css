@@ -320,6 +320,7 @@ th{
     padding: 0px 0px 0px 3px;
     margin-top: 0px;
     color: #007ac3;
+    margin:10px;
 }
 
 #footer> p {
@@ -332,25 +333,29 @@ th{
 }
 #shuffleCardsBtn{
   cursor: pointer;
-  width: 35px;
-  height:25px;
+  min-width: 35px;
+  height: 25px;
   /* background: url(../images/suffle-btn.svg);
   background-repeat: no-repeat; */
   float: left;
   margin: 10px;
   background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 6px 0 0;
 }
 #shuffleCardsBtn img{
-  max-width: 100%;
-  max-height: 100%;
+  width: 35px;
+  height: 25px;
+  flex: 0 0 auto;
 }
-#shuffle{
+#shuffleCardsBtn .shuffleLabel{
       color: #007ac3;
-     float: left;
-    margin-right: 10px;
-    font-family:'FiraSans-Light';
-    font-size: 18px;
-       padding: 10px 0px 0px 3px;
+      font-family:'FiraSans-Light';
+      font-size: 18px;
+      line-height: 1;
+      white-space: nowrap;
 }
 
 .flipCard{
@@ -1283,9 +1288,8 @@ th{
   #count{
     font-size: 14px;
   }
-  #shuffle{
+  #shuffleCardsBtn .shuffleLabel{
     font-size: 14px;
-    padding: 13px 0px 0px 3px;
   }
   .flip {
     padding: 0px 0px 0px 5px;
