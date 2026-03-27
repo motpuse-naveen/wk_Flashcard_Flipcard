@@ -22,6 +22,10 @@
   var cardContainer = '';
   var $footer = '';
   var front_back = '';
+  /** Step 3+4: prevent overlap during next/prev fade */
+  var isNavAnimating = false;
+  var NAV_FADE_MS = 200;
+  var NAV_FADE_OUT_OPACITY = 0.2;
 
   // Const
   var DATA_TYPE_TERM = 'Term';
@@ -146,60 +150,107 @@
 
   function handleNextButtonEvents(e) {
     if (e.type === 'keyup' && (e.keyCode !== 13 && e.keyCode !== 32))
-      return false; 
-    var dataType = $nextBtn.attr('data-type');
-      if(nSlideCounter<(nCount-1)) {
+      return false;
+    if (isNavAnimating) return false;
+    if (nSlideCounter < (nCount - 1)) {
+      isNavAnimating = true;
+      fadeNavThenUpdate(function() {
         nSlideCounter++;
         $termRB.attr('data-itemid', nSlideCounter);
         $definationRB.attr('data-itemid', nSlideCounter);
         $flipCardBtn.attr('data-itemid', nSlideCounter);
         $readMoreLnk.attr('data-itemid', nSlideCounter);
         $currentCard.text(nSlideCounter + 1);
-        if(dataType == DATA_TYPE_TERM) {
-          mangeTermInfo(nSlideCounter);
-          $readMoreLnk.attr('data-type', DATA_TYPE_TERM);
-          $card.flip(false);
-        }
-        else {
-            mangeDefinationInfo(nSlideCounter);
-            $readMoreLnk.attr('data-type', DATA_TYPE_DEFINATION);
-            $card.flip(true);
-        }        
-        if(nSlideCounter == (nCount-1)){
+        /** Step 1+2: always show new card on front; no flip animation */
+        resetToFrontStateAfterNav(nSlideCounter);
+        if (nSlideCounter == (nCount - 1)) {
           DisableRightArrow();
         }
-      }
-      EnableLeftArrow();
-      addTabIndex();     
+        EnableLeftArrow();
+        addTabIndex();
+      }, function() {
+        isNavAnimating = false;
+      });
+    }
   }
   
   function handlePreviousButtonEvents(e) {
     if (e.type === 'keyup' && (e.keyCode !== 13 && e.keyCode !== 32))
       return false;
-    var dataType = $nextBtn.attr('data-type');
-    if(nSlideCounter>0) {
+    if (isNavAnimating) return false;
+    if (nSlideCounter > 0) {
+      isNavAnimating = true;
+      fadeNavThenUpdate(function() {
         nSlideCounter--;
         $termRB.attr('data-itemid', nSlideCounter);
         $definationRB.attr('data-itemid', nSlideCounter);
         $flipCardBtn.attr('data-itemid', nSlideCounter);
         $readMoreLnk.attr('data-itemid', nSlideCounter);
         $currentCard.text(nSlideCounter + 1);
-        if(dataType == DATA_TYPE_TERM) {
-          mangeTermInfo(nSlideCounter);
-          $readMoreLnk.attr('data-type', DATA_TYPE_TERM);
-          $card.flip(false);
-        }
-        else {
-            mangeDefinationInfo(nSlideCounter);
-            $readMoreLnk.attr('data-type', DATA_TYPE_DEFINATION);
-            $card.flip(true);
-        }        
-        if(nSlideCounter == 0){
+        resetToFrontStateAfterNav(nSlideCounter);
+        if (nSlideCounter === 0) {
           DisableLeftArrow();
         }
+        EnableRightArrow();
+        addTabIndex();
+      }, function() {
+        isNavAnimating = false;
+      });
+    }
+  }
+
+  /**
+   * Step 1: New card always starts on Question (front).
+   * Step 2: Unflip without CSS transition so flip animation stays for flip/radio only.
+   */
+  function resetToFrontStateAfterNav(index) {
+    mangeTermInfo(index);
+    showFrontWithoutAnimation();
+    $('#flipCardBtnb #flipCardb').removeClass('flipCardFront');
+    $('#flipCardBtnb #flipCardb').addClass('flipCardBack');
+    $flipCardBtn.attr('data-type', DATA_TYPE_TERM);
+    $readMoreLnk.attr('data-type', DATA_TYPE_TERM);
+    $nextBtn.attr('data-type', DATA_TYPE_TERM);
+    $prevBtn.attr('data-type', DATA_TYPE_TERM);
+    $zoomFrontBtn.removeClass('disabled');
+    $zoomBackSideBtn.addClass('disabled');
+  }
+
+  /** Step 4: Restore flip plugin transitions on .front/.back after forcing unflip */
+  function showFrontWithoutAnimation() {
+    var $faces = $card.find('.front, .back');
+    var saved = $faces.map(function() {
+      return $(this).css('transition');
+    }).get();
+    $faces.css('transition', 'none');
+    $card.flip(false);
+    void $card[0].offsetHeight;
+    $faces.each(function(i) {
+      $(this).css('transition', saved[i] || '');
+    });
+  }
+
+  /**
+   * Step 3: Fade only card faces (not next/prev buttons). Run midCallback between out and in.
+   */
+  function fadeNavThenUpdate(midCallback, doneCallback) {
+    var $faces = $card.find('.front, .back');
+    var fadePromises = $faces.map(function() {
+      return $(this).fadeTo(NAV_FADE_MS, NAV_FADE_OUT_OPACITY).promise();
+    }).get();
+    $.when.apply($, fadePromises).done(function() {
+      if (typeof midCallback === 'function') {
+        midCallback();
       }
-      EnableRightArrow();
-      addTabIndex();      
+      var fadeIn = $faces.map(function() {
+        return $(this).fadeTo(NAV_FADE_MS, 1).promise();
+      }).get();
+      $.when.apply($, fadeIn).done(function() {
+        if (typeof doneCallback === 'function') {
+          doneCallback();
+        }
+      });
+    });
   }
 
   function handleFlipCardBtnEvents(e) {
