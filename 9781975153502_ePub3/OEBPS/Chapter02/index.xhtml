@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width,  initial-scale=1.0"/>
 	<title>Flash Card</title>
 	<meta charset="UTF-8"/> 
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<script src="js/jquery-1.10.2.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/jquery.ui.touch-punch.min.js"></script>
-	<script src="js/jquery.flip.js"></script>
-	<script src="js/flip.js"></script>
-	<script src="js/preloader.js"></script>
-	<script type="text/javascript" src="js/data.js"></script>
-	<script type="text/javascript" src="js/activity.js"></script>
+	<link rel="stylesheet" type="text/css" href="../flipcard-main/css/style.css"/>
+	<script src="../flipcard-main/js/jquery-1.10.2.js"></script>
+	<script src="../flipcard-main/js/jquery-ui.js"></script>
+	<script src="../flipcard-main/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../flipcard-main/js/jquery.flip.js"></script>
+	<script src="../flipcard-main/js/flip.js"></script>
+	<script src="../flipcard-main/js/preloader.js"></script>
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="../flipcard-main/js/activity.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#card").flip({	        
@@ -44,7 +44,7 @@
 		            </section>
 	        	</section>		
 	        	<section id="card" class="card">
-	        		<button role="button" id="next" class="tabindex" data-type="Term" aria-label="To move next item, press the Enter or Spacebar key."><img src="images/next-arrow.svg" alt="" /></button>
+	        		<button role="button" id="next" class="tabindex" data-type="Term" aria-label="To move next item, press the Enter or Spacebar key."><img src="../flipcard-main/images/next-arrow.svg" alt="" /></button>
 	    			<section id="cardFrontSide" class="front card" aria-hidden="false">    				
 	    			        <section class="cardContent scrollbar" >		        				        	
 	    			        	<section id="imageHolder" class="term-img-holder"></section>		        			
@@ -57,7 +57,7 @@
 		        				<span id="read" class="readMore tabindex" data-itemid='0' aria-label="Read more information">Read more</span>
 		        			</section>		        	
 			        		<button role="button" id="flipCardBtnf" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term">
-				        		<span id="flipCardf" class="flipCard" data-type="Term"><img src="images/flip-iconBack.svg" alt="" /></span>
+				        		<span id="flipCardf" class="flipCard" data-type="Term"><img src="../flipcard-main/images/flip-iconBack.svg" alt="" /></span>
 				        		<span id="flipf" class="flip">Flip Card</span>
 		        			</button>
 		        			
@@ -72,18 +72,18 @@
 		        				<span id="read1" class="readMore tabindex" data-itemid='0' aria-label="Read more information" aria-hidden="true">Read more</span>
 		        			</section>
 		        			<button role="button" id="flipCardBtnb" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term" aria-hidden="true">
-				        		<span id="flipCardb" class="flipCard" data-type="Term"><img src="images/flip-iconBack.svg" alt="" /></span>
+				        		<span id="flipCardb" class="flipCard" data-type="Term"><img src="../flipcard-main/images/flip-iconBack.svg" alt="" /></span>
 				        		<span id="flipb" class="flip">Flip Card</span>
 		        			</button>
 		        			
 					  </section>
-					 <button role="button" id="previous" class="tabindex disabled" data-type="Term" aria-label="To move previous item, press the Enter or Spacebar key."><img src="images/back-arrow.svg" alt="" /></button>   			
+					 <button role="button" id="previous" class="tabindex disabled" data-type="Term" aria-label="To move previous item, press the Enter or Spacebar key."><img src="../flipcard-main/images/back-arrow.svg" alt="" /></button>   			
 	        	</section> 
 	        	        	
 			</section>		
 			<footer id="footer" class="headerFooter">
 				<section>
-					<button role="button" id="shuffleCardsBtn" class="tabindex" data-type="Term" aria-label="To shuffle the Cards, press the Enter or Spacebar key."><img src="images/suffle-btn.svg" alt="" /></button>
+					<button role="button" id="shuffleCardsBtn" class="tabindex" data-type="Term" aria-label="To shuffle the Cards, press the Enter or Spacebar key."><img src="../flipcard-main/images/suffle-btn.svg" alt="" /></button>
 			        <span id="shuffle">Shuffle Cards</span>
 		        	<p id="count" class=""><span id="currentCard"></span> of <span id="totalCards"></span> Cards</p>	
 				</section>							
