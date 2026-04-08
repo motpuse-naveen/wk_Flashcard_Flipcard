@@ -31,16 +31,16 @@
 		<item id="fwd" href="fwd.xhtml" media-type="application/xhtml+xml"/>
 		<item id="abbr" href="abbr.xhtml" media-type="application/xhtml+xml"/>
 		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml"/>
-		<item href="Chapter01/js/data.js" id="ch01jsdata" media-type="application/javascript"/>
-		<item href="Chapter02/js/data.js" id="ch02jsdata" media-type="application/javascript"/>
-		<item href="Chapter03/js/data.js" id="ch03jsdata" media-type="application/javascript"/>
-		<item href="Chapter04/js/data.js" id="ch04jsdata" media-type="application/javascript"/>
-		<item href="flipcard-main/js/data.js" id="flipcardjsdata" media-type="application/javascript"/>
+		<item href="Chapter01/data.js" id="ch01jsdata" media-type="application/javascript"/>
+		<item href="Chapter02/data.js" id="ch02jsdata" media-type="application/javascript"/>
+		<item href="Chapter03/data.js" id="ch03jsdata" media-type="application/javascript"/>
+		<item href="Chapter04/data.js" id="ch04jsdata" media-type="application/javascript"/>
+		<item href="Chapter05/data.js" id="ch05jsdata" media-type="application/javascript"/>
 		<item id="ch001" href="Chapter01/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="ch002" href="Chapter02/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="ch003" href="Chapter03/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="ch004" href="Chapter04/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
-		<item id="ch005" href="flipcard-main/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch005" href="Chapter05/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 		<item id="css" href="style.css" media-type="text/css"/>
 		<item id="imgL01" href="images/L01.jpg" media-type="image/jpeg"/>
 		<item id="my_cover_image" href="images/cover.jpg" media-type="image/jpeg"/>
@@ -86,7 +86,6 @@
 		<item id="flipcardimgzoom-icon" href="flipcard-main/images/zoom-icon.svg" media-type="image/svg+xml"/>
 		<item href="flipcard-main/js/activity.js" id="flipcardjsactivity" media-type="application/javascript"/>
 		<item href="flipcard-main/js/audio.js" id="flipcardjsaudio" media-type="application/javascript"/>
-		<item href="flipcard-main/js/data.js" id="flipcardjsdata" media-type="application/javascript"/>
 		<item href="flipcard-main/js/flip.js" id="flipcardjsflip" media-type="application/javascript"/>
 		<item href="flipcard-main/js/jquery-1.10.2.js" id="flipcardjsjquery-1.10.2" media-type="application/javascript"/>
 		<item href="flipcard-main/js/jquery-ui.js" id="flipcardjsjquery-ui" media-type="application/javascript"/>

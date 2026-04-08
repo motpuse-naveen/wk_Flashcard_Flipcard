@@ -1,0 +1,68 @@
+@font-face{font-family:SourceSansPro-Regular;src:url(../fonts/SourceSansPro-Regular.ttf);}
+@font-face{font-family:SourceSansPro-Black;src:url(../fonts/SourceSansPro-Black.ttf);}
+@font-face{font-family:SourceSansPro-BlackItalic;src:url(../fonts/SourceSansPro-BlackItalic.ttf);}
+@font-face{font-family:SourceSansPro-Bold;src:url(../fonts/SourceSansPro-Bold.ttf);}
+@font-face{font-family:SourceSansPro-BoldItalic;src:url(../fonts/SourceSansPro-BoldItalic.ttf);}
+@font-face{font-family:SourceSansPro-ExtraLight;src:url(../fonts/SourceSansPro-ExtraLight.ttf);}
+@font-face{font-family:SourceSansPro-ExtraLightItalic;src:url(../fonts/SourceSansPro-ExtraLightItalic.ttf);}
+@font-face{font-family:SourceSansPro-Italic;src:url(../fonts/SourceSansPro-Italic.ttf);}
+@font-face{font-family:SourceSansPro-Light;src:url(../fonts/SourceSansPro-Light.ttf);}
+@font-face{font-family:SourceSansPro-LightItalic;src:url(../fonts/SourceSansPro-LightItalic.ttf);}
+@font-face{font-family:SourceSansPro-Semibold;src:url(../fonts/SourceSansPro-Semibold.ttf);}
+@font-face{font-family:SourceSansPro-SemiboldItalic;src:url(../fonts/SourceSansPro-SemiboldItalic.ttf);}
+
+@page{margin:5pt;}
+body{font-family:SourceSansPro-Regular;margin: 0 14px;-webkit-text-size-adjust:none;}
+#main_container {margin: 0 auto 20px auto;max-width: 768px;}
+header{margin:0px;}
+h1,h2,h3,h4,h5,h6{page-break-after: avoid;}
+p{text-indent:0em;font-size: 1em;line-height: 1.2em;margin-top: 0em;margin-bottom: 0em;text-align: justify;}
+
+a {color: rgb(51,102,204);text-decoration: none;}
+a.toc {color: inherit;}
+a.hlink{color:inherit;text-decoration:none;}
+
+sup{vertical-align: 4px;font-size: 0.7em;}
+sub{vertical-align: -4px;font-size: 0.7em;}
+img{max-height: 100%;max-width: 100%;vertical-align: middle;}
+table, div {page-break-inside: avoid;}
+.small {font-size:0.8em;}
+.top{padding-top:1em;}
+
+div.figure{margin-top:1em;margin-bottom:1em;}
+figure.figure {margin-top:1.2em;margin-bottom:1.2em;text-align:center;page-break-inside:avoid;}
+figcaption.caption {padding-bottom:5px;margin-top:1.0em;margin-bottom:0.3em;font-size:0.9em;text-align:center;font-family:SourceSansPro-Regular;page-break-before:avoid;}
+span.fig-num{font-family:SourceSansPro-Regular;}
+
+.copyright {margin:2em 0em 0em 0em; font-size:0.9em;}
+.crt {margin:0.2em 0em 0em 0em; text-align:left;}
+.crt1 {margin:1em 0em 0em 0em; text-align:left;}
+.crt1a {margin:1em 0em 0em 0em; text-align:left;font-family:SourceSansPro-Bold;border-top:1px solid #000000;}
+.crt-line1 {border-bottom:1px solid #000000;}
+.crt2 {margin:1em 0em 0em 0em; text-align:center;}
+
+.tp1{margin:1em 0.3em 0 0.3em;font-family:SourceSansPro-Bold;font-size:4em;text-align:center;text-transform:uppercase;color:#EAB304;text-shadow:4px 4px #94979B;line-height:1.0em;}
+.subttl{display:block;color:#6A6D70;text-shadow:4px 4px #CFD1D4;font-family:SourceSansPro-ExtraLightItalic;font-size:80%;}
+.tp-auth{background-color:#606265;color:#FFFFFF;margin:1em 0 2em 0;padding:1em;border-top:0.7em solid #EAB304;}
+.tau{margin:1em 20% 0 20%;text-align:center;font-family:SourceSansPro-Bold;font-size:1.2em;border-bottom:1px solid #FFFFFF;}
+.taf{margin:0.2em 20% 0 20%;text-align:center;font-family:SourceSansPro-Regular;font-size:1em;}
+
+.fm{margin:0.5em 0 2em 0;background-color:#C3CAE6;padding:0.5em 0 0 0.5em;}
+.fm-head{margin:1.5em 0 0 0;font-family:SourceSansPro-Bold;background-color:#456FB4;color:#FFFFFF;padding:0.5em 0.5em 0.5em 0.5em;border-radius:0 0 0.5em 0.5em;}
+.cont_au{margin:1em 0 0 0;text-align:left;font-family:SourceSansPro-Bold;font-size:1.2em;border-bottom:1px solid #FFFFFF;}
+.cont_aff{margin:0.2em 0 0 1.5em;text-indent:-1.5em;text-align:left;font-family:SourceSansPro-Regular;font-size:1em;}
+
+.noindent{font-family:SourceSansPro-Regular;margin:1em 0 0 0;text-align:justify;}
+.cont_au1{margin:1em 0 0 0;text-align:center;font-family:SourceSansPro-Bold;font-size:1.2em;border-bottom:1px solid #FFFFFF;}
+.fm-abb{margin:0.3em 0 0 1.5em;text-indent:-1.5em;text-align:left;font-family:SourceSansPro-Regular;font-size:1.1em;}
+
+.toc-ch{margin:1em 0 0 1.5em;text-indent:-1.5em;font-size:1.3em;font-family:SourceSansPro-Bold;text-align:left;}
+.toc-txt{margin:0.2em 0 0 2.1em;font-size:1em;font-family:SourceSansPro-Regular;text-align:left;}
+.toc-au{margin:0.3em 0 0 2.4em;font-size:0.85em;font-family:SourceSansPro-Regular;text-align:left;}
+
+.blue{color:#456FB4;}
+.pink{color:#8E4998;}
+.gren{color:#0A855C;}
+.orng{color:#C25126;}
+.grn1{color:#0C808D;}
+

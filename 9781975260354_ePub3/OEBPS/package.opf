@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <package version="3.0" xml:lang="en" unique-identifier="pub-id" xmlns="http://www.idpf.org/2007/opf">
+ <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <dc:title id="t1" xml:lang="en">Pediatric Hematology-Oncology Rapid Review Flash Cards, 1e</dc:title>
+  <meta refines="#t1" property="title-type">main</meta>
+  <meta refines="#t1" property="display-seq">1</meta>
+  <dc:identifier id="pub-id">978-1-975260-35-4</dc:identifier>
+  <meta refines="#pub-id" property="identifier-type" scheme="xsd:string">978-1-975260-35-4</meta>
+  <dc:language>en</dc:language>
+  <dc:creator id="auth1">Ariel Nash, MD</dc:creator>
+  <meta refines="#auth1" property="role" scheme="marc:relators" id="role">aut</meta>
+  <meta refines="#auth1" property="file-as">Nash, Ariel</meta>
+  <dc:creator id="auth2">Priti Tewari, MD</dc:creator>
+  <meta refines="#auth2" property="role" scheme="marc:relators" id="role1">aut</meta>
+  <meta refines="#auth2" property="file-as">Tewari, Priti</meta>
+  <dc:rights>Copyright &#169; 2027 Wolters Kluwer</dc:rights>
+  <meta property="dcterms:identifer" id="isbn">urn:isbn:978-1-975260-35-4</meta>
+  <meta property="dcterms:publisher">Wolters Kluwer</meta>
+  <meta property="dcterms:language">en</meta>
+  <meta property="dcterms:modified">2026-04-10T13:55:00Z</meta>
+  <meta property="dcterms:date">2026</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+	<meta property="schema:accessibilityFeature">alternativeText</meta>
+	<meta property="schema:accessModeSufficient">textual,visual</meta>
+	<meta property="schema:accessModeSufficient">textual</meta> 
+    <meta property="schema:accessibilityFeature">tableOfContents</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+	<meta property="schema:accessibilityFeature">pageBreakMarkers</meta>
+	<meta property="schema:accessibilityFeature">pageNavigation</meta>
+	<meta property="schema:accessibilityFeature">ARIA</meta>
+	<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+	<meta property="schema:accessibilityFeature">displayTransformability</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:accessibilityFeature">index</meta>
+	<meta property="schema:accessibilitySummary">This publication conforms to the EPUB Accessibility specification at WCAG 2.2 Level AA. There are multiple linked references to various figures, tables and footnotes in this EPUB however there are no back links provided for figures and tables.</meta>
+	<dc:source id="pageBreakSource">urn:isbn:9781975260330</dc:source>
+    <meta property="pageBreakSource">urn:isbn:9781975260330</meta>
+  <meta name="cover" content="my_cover_image"/>
+ </metadata>
+<manifest>
+		<item id="nav" properties="nav" href="nav.xhtml" media-type="application/xhtml+xml"/>
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+
+		<item id="cvi" href="front_matter/cvi.xhtml" media-type="application/xhtml+xml"/>
+		<item id="tp" href="front_matter/tp.xhtml" media-type="application/xhtml+xml"/>
+		<item id="cop" href="front_matter/cop.xhtml" media-type="application/xhtml+xml"/>
+		<item id="cont" href="front_matter/cont.xhtml" media-type="application/xhtml+xml"/>
+		<item id="pre" href="front_matter/pre.xhtml" media-type="application/xhtml+xml"/>
+		<item id="abbr" href="front_matter/abbr.xhtml" media-type="application/xhtml+xml"/>
+		<item id="toc" href="front_matter/toc.xhtml" media-type="application/xhtml+xml"/>
+		<item href="chapter01/data.js" id="ch01jsdata" media-type="application/javascript"/>
+		<item href="chapter02/data.js" id="ch02jsdata" media-type="application/javascript"/>
+		<item href="chapter03/data.js" id="ch03jsdata" media-type="application/javascript"/>
+		<item href="chapter04/data.js" id="ch04jsdata" media-type="application/javascript"/>
+		<item href="chapter05/data.js" id="ch05jsdata" media-type="application/javascript"/>
+		<item href="chapter06/data.js" id="ch06jsdata" media-type="application/javascript"/>
+		<item href="chapter07/data.js" id="ch07jsdata" media-type="application/javascript"/>
+		<item href="chapter08/data.js" id="ch08jsdata" media-type="application/javascript"/>
+		<item href="chapter09/data.js" id="ch09jsdata" media-type="application/javascript"/>
+		<item href="chapter10/data.js" id="ch10jsdata" media-type="application/javascript"/>
+		<item href="chapter11/data.js" id="ch11jsdata" media-type="application/javascript"/>
+		<item id="ch01" href="chapter01/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch02" href="chapter02/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch03" href="chapter03/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch04" href="chapter04/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch05" href="chapter05/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch06" href="chapter06/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch07" href="chapter07/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch08" href="chapter08/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch09" href="chapter09/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch10" href="chapter10/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+		<item id="ch11" href="chapter11/index.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+
+		<item id="css" href="front_matter/style.css" media-type="text/css"/>
+		<item id="my_cover_image" href="images/cover.jpg" media-type="image/jpeg"/>
+		<item id="img10_39-1" href="images/10_39-1.jpg" media-type="image/jpeg"/>
+		<item id="img10_74-1" href="images/10_74-1.jpg" media-type="image/jpeg"/>
+		<item id="img10_75-1" href="images/10_75-1.jpg" media-type="image/jpeg"/>
+		<item id="img10_76-1" href="images/10_76-1.jpg" media-type="image/jpeg"/>
+		<item id="img10_77-2" href="images/10_77-2.jpg" media-type="image/jpeg"/>
+		<item id="img10_77_1" href="images/10_77_1.jpg" media-type="image/jpeg"/>
+		<item id="img10_79-1" href="images/10_79-1.jpg" media-type="image/jpeg"/>
+		<item id="img11_34-1" href="images/11_34-1.png" media-type="image/png"/>
+		<item id="img11_34-2" href="images/11_34-2.png" media-type="image/png"/>
+		<item id="img1_19-1" href="images/1_19-1.jpg" media-type="image/jpeg"/>
+		<item id="img1_2-1" href="images/1_2-1.jpg" media-type="image/jpeg"/>
+		<item id="img1_49-1" href="images/1_49-1.jpg" media-type="image/jpeg"/>
+		<item id="img1_60-1" href="images/1_60-1.png" media-type="image/png"/>
+		<item id="img2_7-1" href="images/2_7-1.jpg" media-type="image/jpeg"/>
+		<item id="img4_67-1" href="images/4_67-1.jpg" media-type="image/jpeg"/>
+		<item id="img4_68-1" href="images/4_68-1.jpg" media-type="image/jpeg"/>
+		<item id="img4_69-1" href="images/4_69-1.jpg" media-type="image/jpeg"/>
+		<item id="img5_31-1" href="images/5_31-1.jpg" media-type="image/jpeg"/>
+		<item id="img5_33-1" href="images/5_33-1.jpg" media-type="image/jpeg"/>
+		<item id="img8_73-1" href="images/8_73-1.jpg" media-type="image/jpeg"/>
+		<item id="img8_75-1" href="images/8_75-1.jpg" media-type="image/jpeg"/>
+		<item id="img9-75-1" href="images/9-75-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_111-1" href="images/9_111-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_113-1" href="images/9_113-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_115-1" href="images/9_115-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_115-2" href="images/9_115-2.jpg" media-type="image/jpeg"/>
+		<item id="img9_118-1" href="images/9_118-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_28-1" href="images/9_28-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_40-1" href="images/9_40-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_87-1" href="images/9_87-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_89-1" href="images/9_89-1.jpg" media-type="image/jpeg"/>
+		<item id="img9_95-1" href="images/9_95-1.jpg" media-type="image/jpeg"/>
+		<item id="imglogo" href="images/logo.jpg" media-type="image/jpeg"/>
+
+		<item id="font1" href="fonts/SourceSansPro-Black.ttf" media-type="application/vnd.ms-opentype"/>
+		<item id="font2" href="fonts/SourceSansPro-BlackItalic.ttf" media-type="application/vnd.ms-opentype"/>
+		<item id="font4" href="fonts/SourceSansPro-BoldItalic.ttf" media-type="application/vnd.ms-opentype"/>
+		<item id="font5" href="fonts/SourceSansPro-ExtraLight.ttf" media-type="application/vnd.ms-opentype"/>
+		<item id="font6" href="fonts/SourceSansPro-ExtraLightItalic.ttf" media-type="application/vnd.ms-opentype"/>
+		<item id="font7" href="fonts/SourceSansPro-Italic.ttf" media-type="application/vnd.ms-opentype"/>
+		<item id="font9" href="fonts/SourceSansPro-LightItalic.ttf" media-type="application/vnd.ms-opentype"/>
+		<item id="font12" href="fonts/SourceSansPro-SemiboldItalic.ttf" media-type="application/vnd.ms-opentype"/>
+		<item href="fonts/SourceSansPro-Bold.ttf" id="item-4910" media-type="application/vnd.ms-opentype"></item>
+		<item href="fonts/SourceSansPro-BoldIt.ttf" id="item-4912" media-type="application/vnd.ms-opentype"></item>
+		<item href="fonts/SourceSansPro-It.ttf" id="item-4914" media-type="application/vnd.ms-opentype"></item>
+		<item href="fonts/SourceSansPro-Light.ttf" id="item-4916" media-type="application/vnd.ms-opentype"></item>
+		<item href="fonts/SourceSansPro-LightIt.ttf" id="item-4918" media-type="application/vnd.ms-opentype"></item>
+		<item href="fonts/SourceSansPro-Regular.ttf" id="item-4920" media-type="application/vnd.ms-opentype"></item>
+		<item href="fonts/SourceSansPro-Semibold.ttf" id="item-4922" media-type="application/vnd.ms-opentype"></item>
+		<item href="fonts/SourceSansPro-SemiboldIt.ttf" id="item-4924" media-type="application/vnd.ms-opentype"></item>
+
+		<item id="flipcardcss1" href="flipcard-main/css/audio.css" media-type="text/css"/>
+		<item id="flipcardcss2" href="flipcard-main/css/bootstrap.css" media-type="text/css"/>
+		<item id="flipcardcss3" href="flipcard-main/css/jPlayer.css" media-type="text/css"/>
+		<item id="flipcardcss4" href="flipcard-main/css/jquery-ui.css" media-type="text/css"/>
+		<item id="flipcardcss5" href="flipcard-main/css/style.css" media-type="text/css"/>
+		<item id="flipcardFiraSans-Bold" href="flipcard-main/font/FiraSans-Bold.otf" media-type="application/vnd.ms-opentype"/>
+		<item id="flipcardFiraSans-ExtraBold" href="flipcard-main/font/FiraSans-ExtraBold.otf" media-type="application/vnd.ms-opentype"/>
+		<item id="flipcardFiraSans-Light" href="flipcard-main/font/FiraSans-Light.otf" media-type="application/vnd.ms-opentype"/>
+		<item id="flipcardFiraSans-Regular" href="flipcard-main/font/FiraSans-Regular.otf" media-type="application/vnd.ms-opentype"/>
+		<item id="flipcardimgaudio-off" href="flipcard-main/images/audio-off.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgaudio-on" href="flipcard-main/images/audio-on.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgback-arrow" href="flipcard-main/images/back-arrow.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgcard" href="flipcard-main/images/card.jpeg" media-type="image/jpeg"/>
+		<item id="flipcardimgcard_new" href="flipcard-main/images/card_new.jpg" media-type="image/jpeg"/>
+		<item id="flipcardimgclose-btn" href="flipcard-main/images/close-btn.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgflip-icon" href="flipcard-main/images/flip-icon.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgflip-iconBack" href="flipcard-main/images/flip-iconBack.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimg-476" href="flipcard-main/images/loading.gif" media-type="image/gif"/>
+		<item id="flipcardimgnext-arrow" href="flipcard-main/images/next-arrow.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgradio-active" href="flipcard-main/images/radio-active.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgradio-inactive" href="flipcard-main/images/radio-inactive.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgsuffle-btn" href="flipcard-main/images/suffle-btn.svg" media-type="image/svg+xml"/>
+		<item id="flipcardimgzoom-icon" href="flipcard-main/images/zoom-icon.svg" media-type="image/svg+xml"/>
+		<item href="flipcard-main/js/activity.js" id="flipcardjsactivity" media-type="application/javascript"/>
+		<item href="flipcard-main/js/audio.js" id="flipcardjsaudio" media-type="application/javascript"/>
+		<item href="flipcard-main/js/flip.js" id="flipcardjsflip" media-type="application/javascript"/>
+		<item href="flipcard-main/js/jquery-1.10.2.js" id="flipcardjsjquery-1.10.2" media-type="application/javascript"/>
+		<item href="flipcard-main/js/jquery-ui.js" id="flipcardjsjquery-ui" media-type="application/javascript"/>
+		<item href="flipcard-main/js/jquery.flip.js" id="flipcardjsjquery.flip" media-type="application/javascript"/>
+		<item href="flipcard-main/js/jquery.jplayer.js" id="flipcardjsjquery.jplayer" media-type="application/javascript"/>
+		<item href="flipcard-main/js/jquery.ui.touch-punch.min.js" id="flipcardjsjquery.ui.touch-punch.min" media-type="application/javascript"/>
+		<item href="flipcard-main/js/preloader.js" id="flipcardjspreloader" media-type="application/javascript"/>
+
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cvi" />
+		<itemref idref="tp" />
+		<itemref idref="cop" />
+		<itemref idref="cont" />
+		<itemref idref="pre" />
+		<itemref idref="abbr" />
+		<itemref idref="toc" />
+		<itemref idref="ch01" />
+		<itemref idref="ch02" />
+		<itemref idref="ch03" />
+		<itemref idref="ch04" />
+		<itemref idref="ch05" />
+		<itemref idref="ch06" />
+		<itemref idref="ch07" />
+		<itemref idref="ch08" />
+		<itemref idref="ch09" />
+		<itemref idref="ch10" />
+		<itemref idref="ch11" />
+	</spine>
+</package>

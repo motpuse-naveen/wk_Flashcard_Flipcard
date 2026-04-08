@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+	<head>
+		<meta name="dtb:uid" content="978-1-975260-35-4"/>
+		<meta name="dtb:depth" content="2"/>
+		<meta name="dtb:totalPageCount" content="0"/>
+		<meta name="dtb:maxPageNumber" content="0"/>
+	</head>
+	<docTitle><text>Pediatric Hematology-Oncology Rapid Review Flash Cards, 1e</text></docTitle>
+	<docAuthor><text>Ariel Nash, MD and Priti Tewari, MD</text></docAuthor>
+	<navMap>
+		<navPoint id="nav-1" playOrder="1">
+			<navLabel><text>Cover</text></navLabel>
+			<content src="front_matter/cvi.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-2" playOrder="2">
+			<navLabel><text>Title Page</text></navLabel>
+			<content src="front_matter/tp.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-3" playOrder="3">
+			<navLabel><text>Copyright</text></navLabel>
+			<content src="front_matter/cop.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-4" playOrder="4">
+			<navLabel><text>Contributors</text></navLabel>
+			<content src="front_matter/cont.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-5" playOrder="5">
+			<navLabel><text>Preface</text></navLabel>
+			<content src="front_matter/pre.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-6" playOrder="6">
+			<navLabel><text>Abbreviations</text></navLabel>
+			<content src="front_matter/abbr.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-7" playOrder="7">
+			<navLabel><text>Contents</text></navLabel>
+			<content src="front_matter/toc.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-8" playOrder="8">
+			<navLabel><text>1. Erythrocytes</text></navLabel>
+			<content src="chapter01/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-9" playOrder="9">
+			<navLabel><text>2. Leukocytes</text></navLabel>
+			<content src="chapter02/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-10" playOrder="10">
+			<navLabel><text>3. Platelets</text></navLabel>
+			<content src="chapter03/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-11" playOrder="11">
+			<navLabel><text>4. Hemostasis/Thrombosis</text></navLabel>
+			<content src="chapter04/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-12" playOrder="12">
+			<navLabel><text>5. Bone Marrow Failure</text></navLabel>
+			<content src="chapter05/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-13" playOrder="13">
+			<navLabel><text>6. Transfusion Medicine</text></navLabel>
+			<content src="chapter06/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-14" playOrder="14">
+			<navLabel><text>7. General Oncology Issues</text></navLabel>
+			<content src="chapter07/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-15" playOrder="15">
+			<navLabel><text>8. Hematologic Malignancies</text></navLabel>
+			<content src="chapter08/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-16" playOrder="16">
+			<navLabel><text>9. Solid Tumors</text></navLabel>
+			<content src="chapter09/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-17" playOrder="17">
+			<navLabel><text>10. Hematopoietic Stem Cell Transplant</text></navLabel>
+			<content src="chapter10/index.xhtml"/>
+		</navPoint>
+		<navPoint id="nav-18" playOrder="18">
+			<navLabel><text>11. Core Knowledge in Scholarly Activities</text></navLabel>
+			<content src="chapter11/index.xhtml"/>
+		</navPoint>
+	</navMap>
+<pageList>
+<pageTarget type="normal" id="pagetargetCover" value="Cover" playOrder="19"><navLabel><text>Cover</text></navLabel><content src="front_matter/cvi.xhtml#Cover"/></pageTarget>
+<pageTarget type="normal" id="pagetargeti" value="i" playOrder="20"><navLabel><text>i</text></navLabel><content src="front_matter/tp.xhtml#pagei"/></pageTarget>
+<pageTarget type="normal" id="pagetargetii" value="ii" playOrder="21"><navLabel><text>ii</text></navLabel><content src="front_matter/cop.xhtml#pageii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetiii" value="iii" playOrder="22"><navLabel><text>iii</text></navLabel><content src="front_matter/cont.xhtml#pageiii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetiv" value="iv" playOrder="23"><navLabel><text>iv</text></navLabel><content src="front_matter/cont.xhtml#pageiv"/></pageTarget>
+<pageTarget type="normal" id="pagetargetv" value="v" playOrder="24"><navLabel><text>v</text></navLabel><content src="front_matter/cont.xhtml#pagev"/></pageTarget>
+<pageTarget type="normal" id="pagetargetvi" value="vi" playOrder="25"><navLabel><text>vi</text></navLabel><content src="front_matter/pre.xhtml#pagevi"/></pageTarget>
+<pageTarget type="normal" id="pagetargetvii" value="vii" playOrder="26"><navLabel><text>vii</text></navLabel><content src="front_matter/abbr.xhtml#pagevii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetviii" value="viii" playOrder="27"><navLabel><text>viii</text></navLabel><content src="front_matter/abbr.xhtml#pageviii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetix" value="ix" playOrder="28"><navLabel><text>ix</text></navLabel><content src="front_matter/abbr.xhtml#pageix"/></pageTarget>
+<pageTarget type="normal" id="pagetargetx" value="x" playOrder="29"><navLabel><text>x</text></navLabel><content src="front_matter/abbr.xhtml#pagex"/></pageTarget>
+<pageTarget type="normal" id="pagetargetxi" value="xi" playOrder="30"><navLabel><text>xi</text></navLabel><content src="front_matter/abbr.xhtml#pagexi"/></pageTarget>
+<pageTarget type="normal" id="pagetargetxii" value="xii" playOrder="31"><navLabel><text>xii</text></navLabel><content src="front_matter/abbr.xhtml#pagexii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetxiii" value="xiii" playOrder="32"><navLabel><text>xiii</text></navLabel><content src="front_matter/toc.xhtml#pagexiii"/></pageTarget>
+<pageTarget type="normal" id="pagetargetxiv" value="xiv" playOrder="33"><navLabel><text>xiv</text></navLabel><content src="front_matter/toc.xhtml#pagexiv"/></pageTarget>
+<pageTarget type="normal" id="pagetargetxv" value="xv" playOrder="34"><navLabel><text>xv</text></navLabel><content src="front_matter/toc.xhtml#pagexv"/></pageTarget>
+<pageTarget type="normal" id="pagetargetxvi" value="xvi" playOrder="35"><navLabel><text>xvi</text></navLabel><content src="front_matter/toc.xhtml#pagexvi"/></pageTarget>
+</pageList>
+</ncx>

@@ -24,11 +24,11 @@
 	</script>
 </head>
 <body>
-	<main id="mainConatiner">
+	<main id="mainConatiner" role="main">
 		<header id="headerText">
-			<h1 class="headerText">Hematopoietic System</h1>
+			<h1 class="headerText">Erythrocytes</h1>
 		</header>
-		<section id="root-app">	
+		<section id="root-app" role="application">	
 			<section id="contentHolder">	
 				<section id="chkView" >
 					<section id="TermRB" data-type="Term" data-itemid='0'>
@@ -44,19 +44,19 @@
 		            </section>
 	        	</section>		
 	        	<section id="card" class="card">
-	        		<button id="next" class="tabindex" data-type="Term" aria-label="To move next item, press the Enter or Spacebar key."><img src="../flipcard-main/images/next-arrow.svg" alt="" /></button>
+	        		<button role="button" id="next" class="tabindex" data-type="Term" aria-label="To move next item, press the Enter or Spacebar key."><img src="../flipcard-main/images/next-arrow.svg" alt="" /></button>
 	    			<section id="cardFrontSide" class="front card" aria-hidden="false">    				
 	    			        <section class="cardContent scrollbar" >		        				        	
 	    			        	<section id="imageHolder" class="term-img-holder"></section>		        			
-				        		<section id="termInfo" class="term-info" aria-live="polite"></section>
-				        		<section id="liveInfo" style="opacity:0;height: 0px;width: 0px;text-indent:-999999" aria-live="polite"></section>
+				        		<section id="termInfo" class="term-info" role="region" aria-live="polite"></section>
+				        		<section id="liveInfo" style="opacity:0;height: 0px;width: 0px;text-indent:-999999" role="region" aria-live="polite"></section>
 	    			        </section>  					
 								        				        		
 			        		<section class="clear"></section>
 			        		<section>
 		        				<span id="read" class="readMore tabindex" data-itemid='0' aria-label="Read more information">Read more</span>
 		        			</section>		        	
-			        		<button id="flipCardBtnf" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term">
+			        		<button role="button" id="flipCardBtnf" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term">
 				        		<span id="flipCardf" class="flipCard" data-type="Term"><img src="../flipcard-main/images/flip-iconBack.svg" alt="" /></span>
 				        		<span id="flipf" class="flip">Flip Card</span>
 		        			</button>
@@ -66,24 +66,24 @@
 					        <section class="cardContentb scrollbar" id="style-1">			
 						  		<section id="imageHolderb" class="defn-img-holder"></section>
 								 			  
-			        			<section id="defnInfo" class="defn-info" aria-live="polite"></section>	
+			        			<section id="defnInfo" class="defn-info" role="region" aria-live="polite"></section>	
 					        </section>
 		        			<section>
 		        				<span id="read1" class="readMore tabindex" data-itemid='0' aria-label="Read more information" aria-hidden="true">Read more</span>
 		        			</section>
-		        			<button id="flipCardBtnb" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term" aria-hidden="true">
+		        			<button role="button" id="flipCardBtnb" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term" aria-hidden="true">
 				        		<span id="flipCardb" class="flipCard" data-type="Term"><img src="../flipcard-main/images/flip-iconBack.svg" alt="" /></span>
 				        		<span id="flipb" class="flip">Flip Card</span>
 		        			</button>
 		        			
 					  </section>
-					 <button id="previous" class="tabindex disabled" data-type="Term" aria-label="To move previous item, press the Enter or Spacebar key."><img src="../flipcard-main/images/back-arrow.svg" alt="" /></button>   			
+					 <button role="button" id="previous" class="tabindex disabled" data-type="Term" aria-label="To move previous item, press the Enter or Spacebar key."><img src="../flipcard-main/images/back-arrow.svg" alt="" /></button>   			
 	        	</section> 
 	        	        	
 			</section>		
 			<footer id="footer" class="headerFooter">
 				<section>
-					<button id="shuffleCardsBtn" class="tabindex" data-type="Term" aria-label="To shuffle the Cards, press the Enter or Spacebar key."><img src="../flipcard-main/images/suffle-btn.svg" alt="" /><span class="shuffleLabel">Shuffle Cards</span></button>
+					<button role="button" id="shuffleCardsBtn" class="tabindex" data-type="Term" aria-label="To shuffle the Cards, press the Enter or Spacebar key."><img src="../flipcard-main/images/suffle-btn.svg" alt="" /><span class="shuffleLabel">Shuffle Cards</span></button>
 		        	<p id="count" class=""><span id="currentCard"></span> of <span id="totalCards"></span> Cards</p>	
 				</section>							
 			</footer>
