@@ -1,17 +1,18 @@
+var preloaderImageBasePath = "../flipcard-main/images/";
 var imgPreloadArray = new Array(
-							"images/audio-off.svg",
-							"images/audio-on.svg",
-							"images/back-arrow.svg",
-							"images/close-btn.svg",
-							"images/flip-icon.svg",
-							"images/flip-iconBack.svg",
-							"images/next-arrow.svg",
-							"images/radio-active.svg",
-							"images/radio-inactive.svg",
-							"images/suffle-btn.svg",
-							"images/zoom-icon.svg",
-							"images/card.jpeg",
-							"images/loading.gif");
+							preloaderImageBasePath + "audio-off.svg",
+							preloaderImageBasePath + "audio-on.svg",
+							preloaderImageBasePath + "back-arrow.svg",
+							preloaderImageBasePath + "close-btn.svg",
+							preloaderImageBasePath + "flip-icon.svg",
+							preloaderImageBasePath + "flip-iconBack.svg",
+							preloaderImageBasePath + "next-arrow.svg",
+							preloaderImageBasePath + "radio-active.svg",
+							preloaderImageBasePath + "radio-inactive.svg",
+							preloaderImageBasePath + "suffle-btn.svg",
+							preloaderImageBasePath + "zoom-icon.svg",
+							preloaderImageBasePath + "card.jpeg",
+							preloaderImageBasePath + "loading.gif");
 var imagePreCount = 0;
 for(var pId = 0; pId < imgPreloadArray.length; pId++)
 {
