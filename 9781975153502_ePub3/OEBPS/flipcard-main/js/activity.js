@@ -509,21 +509,48 @@
 
 
   function addTabIndex() {
-    var tab_index = 1;
-    $(".tabindex:visible").each(function (index) {
-      if(!$(this).hasClass("disabled")) {
-        $(this).attr("tabindex", 0);
-        tab_index++;
-      }else{
-         $(this).attr("tabindex", -1);
+    /**
+     * jQuery :visible is true for both flip faces (CSS 3D only hides visually), so we must
+     * not rely on :visible for controls inside #cardFrontSide / #cardBackSide. Otherwise the
+     * hidden face stays in the tab order and screen readers announce the wrong side.
+     */
+    $(".tabindex").each(function () {
+      var $el = $(this);
+      var $inFace = $el.closest("#cardFrontSide, #cardBackSide");
+      if ($inFace.length) {
+        var onFrontFace = $el.closest("#cardFrontSide").length > 0;
+        var onActiveFace = (front_back === "front" && onFrontFace) || (front_back === "back" && !onFrontFace);
+        if (!onActiveFace) {
+          $el.attr("tabindex", -1);
+          return;
+        }
+      }
+      if (!$el.is(":visible")) {
+        $el.attr("tabindex", -1);
+        return;
+      }
+      if ($el.hasClass("disabled")) {
+        $el.attr("tabindex", -1);
+      } else {
+        $el.attr("tabindex", 0);
       }
     });
     $("#chkView").find('.radio').removeClass('checked');
     if(front_back == 'front'){
       $("#cardBackSide").attr('aria-hidden',true);
       $("#cardFrontSide").attr('aria-hidden',false);
-      $("#cardBackSide").find('button,a').attr('tabindex',-1).attr('aria-hidden',true);
-      $("#cardFrontSide").find('button,a').attr('tabindex',0).attr('aria-hidden',false);
+      $("#termInfo").attr('aria-hidden', false).attr('aria-live', 'polite');
+      $("#defnInfo").attr('aria-hidden', true).attr('aria-live', 'off');
+      $("#cardBackSide").find('button,a,.tabindex,[role="button"]').attr('tabindex',-1).attr('aria-hidden',true);
+      $("#cardFrontSide").find('button,a,.tabindex,[role="button"]').each(function () {
+        var $c = $(this);
+        if ($c.hasClass('disabled') || !$c.is(':visible')) {
+          $c.attr('tabindex', -1);
+        } else {
+          $c.attr('tabindex', 0);
+        }
+        $c.removeAttr('aria-hidden');
+      });
       $("#flipCardBtnf").attr('tabindex',0);
       $("#flipCardBtnb").attr('tabindex',-1);
       $termRB.find('.radio').addClass('checked');
@@ -536,8 +563,18 @@
     }else if(front_back == 'back'){
       $("#cardBackSide").attr('aria-hidden',false);
       $("#cardFrontSide").attr('aria-hidden',true);
-      $("#cardFrontSide").find('button,a').attr('tabindex',-1).attr('aria-hidden',true);
-      $("#cardBackSide").find('button,a').attr('tabindex',0).attr('aria-hidden',false);
+      $("#termInfo").attr('aria-hidden', true).attr('aria-live', 'off');
+      $("#defnInfo").attr('aria-hidden', false).attr('aria-live', 'polite');
+      $("#cardFrontSide").find('button,a,.tabindex,[role="button"]').attr('tabindex',-1).attr('aria-hidden',true);
+      $("#cardBackSide").find('button,a,.tabindex,[role="button"]').each(function () {
+        var $c = $(this);
+        if ($c.hasClass('disabled') || !$c.is(':visible')) {
+          $c.attr('tabindex', -1);
+        } else {
+          $c.attr('tabindex', 0);
+        }
+        $c.removeAttr('aria-hidden');
+      });
       $("#flipCardBtnb").attr('tabindex',0);
       $("#flipCardBtnf").attr('tabindex',-1);
       $definationRB.find('.radio').addClass('checked');
@@ -551,8 +588,8 @@
   }
 
   function removeTabIndex() {
-    $(".tabindex:visible").each(function (index) {      
-        $(this).attr("tabindex", -1);      
+    $(".tabindex").each(function () {
+      $(this).attr("tabindex", -1);
     });
   }
   function setPopupTabIndex() {

@@ -330,8 +330,12 @@ th{
     height: 23px;
     width: 23px;
 }
-#chkView fieldset > section .flash_RD_btn:checked:focus+span{
-  outline: 2px solid orange;
+#chkView fieldset > section .flash_RD_btn:checked:focus-visible+span{
+  outline: 2px solid #000000;/* inner indicator */
+	outline: 2px #F9F9F9 solid;
+	outline-offset: 0;
+	/* outer indicator */
+	box-shadow: 0 0 0 4px #193146;
 }
 #count{
     float: right;
@@ -525,8 +529,8 @@ th{
     display: block;
     outline: 1px solid #000000;
 }
-#imageHolder .img-Term:focus, #imageHolderb .img-Term:focus {
-    outline: 4px solid orange;
+#imageHolder .img-Term:focus-visible, #imageHolderb .img-Term:focus-visible {
+    outline: 4px solid #000000;
 }
 #imageHolder .img-Term{
 
@@ -664,8 +668,8 @@ th{
   max-height: 100%;
   border: 1px solid #000000;
 }
-.modal-content .modal-img:focus {
-    outline: 4px solid orange;
+.modal-content .modal-img:focus-visible {
+    outline: 4px solid #000000;
 }
 .modalClose {
     float: right;
@@ -775,11 +779,19 @@ th{
     pointer-events: none !important;
 }
 
-*:focus{  
-    outline: 2px solid orange; 
+*:focus-visible{  
+    	/* inner indicator */
+	outline: 2px #F9F9F9 solid;
+	outline-offset: 0;
+	/* outer indicator */
+	box-shadow: 0 0 0 4px #193146;
 }
-.zoomImage:focus{
-  outline: 2px solid orange;
+.zoomImage:focus-visible{
+  	/* inner indicator */
+	outline: 2px #F9F9F9 solid;
+	outline-offset: 0;
+	/* outer indicator */
+	box-shadow: 0 0 0 4px #193146;
   opacity: 1;
 }
 
