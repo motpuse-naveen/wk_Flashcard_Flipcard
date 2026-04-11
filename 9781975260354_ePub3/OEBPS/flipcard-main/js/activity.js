@@ -63,6 +63,11 @@
     mangeTermInfo(0);
     $("#imageHolder .img-Term").css({opacity: 0});
     DisableLeftArrow();
+    if (nCount <= 1) {
+      DisableRightArrow();
+    } else {
+      $nextBtn.removeAttr('aria-disabled');
+    }
     removeTabIndex();
     setTimeout(function(){
     addTabIndex();        
@@ -567,7 +572,7 @@
   }
 
   function EnableLeftArrow() {
-      $prevBtn.removeClass("leftArrowDisable disabled").addClass("leftArrowEnable").css({
+      $prevBtn.removeClass("leftArrowDisable disabled").addClass("leftArrowEnable").removeAttr('aria-disabled').css({
           "pointer-events": "auto",
           "cursor": "pointer"
       });
@@ -575,7 +580,7 @@
   }
 
   function DisableLeftArrow() {
-      $prevBtn.removeClass("leftArrowEnable").addClass("leftArrowDisable disabled").css({
+      $prevBtn.removeClass("leftArrowEnable").addClass("leftArrowDisable disabled").attr('aria-disabled', 'true').css({
           "pointer-events": "none",
           "cursor": "default"
       });
@@ -583,7 +588,7 @@
   }
 
   function EnableRightArrow() {
-      $nextBtn.removeClass("rightArrowDisable disabled").addClass("rightArrowEnable").css({
+      $nextBtn.removeClass("rightArrowDisable disabled").addClass("rightArrowEnable").removeAttr('aria-disabled').css({
           "pointer-events": "auto",
           "cursor": "pointer"
       });
@@ -591,7 +596,7 @@
   }
 
   function DisableRightArrow() {
-      $nextBtn.removeClass("rightArrowEnable").addClass("rightArrowDisable disabled").css({
+      $nextBtn.removeClass("rightArrowEnable").addClass("rightArrowDisable disabled").attr('aria-disabled', 'true').css({
           "pointer-events": "none",
           "cursor": "default"
       });

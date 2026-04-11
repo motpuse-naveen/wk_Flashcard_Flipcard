@@ -266,6 +266,23 @@ th{
     vertical-align: middle;
     position: relative;
 }
+#chkView fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-inline-size: 0;
+}
+#chkView legend{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 .radio {
     cursor: pointer;
@@ -277,6 +294,7 @@ th{
     background-position: center;
     margin-top: -3px;
     margin-left:3px;
+    pointer-events: none;
 
 }
 
@@ -284,7 +302,7 @@ th{
     background: url(../images/radio-active.svg);   
 }
 
-#chkView> section {
+#chkView fieldset > section {
     display: inline-block;
     /* cursor: pointer; */
     padding: 3px 10px 0px 10px;
@@ -295,12 +313,12 @@ th{
     color: white;
     position: relative   
 }
-#chkView> section:active{
+#chkView fieldset > section:active{
   padding: 3px 10px 0px 10px;
 }
-#chkView> section .flash_RD_btn{
+#chkView fieldset > section .flash_RD_btn{
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     opacity: 0;
     left: 9px;
     margin-top: -1px;
@@ -309,7 +327,7 @@ th{
     height: 23px;
     width: 23px;
 }
-#chkView> section .flash_RD_btn:checked:focus+span{
+#chkView fieldset > section .flash_RD_btn:checked:focus+span{
   outline: 2px solid orange;
 }
 #count{

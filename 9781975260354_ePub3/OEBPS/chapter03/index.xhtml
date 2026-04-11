@@ -31,20 +31,22 @@
 		<section id="root-app">	
 			<section id="contentHolder">	
 				<section id="chkView" >
-					<section id="TermRB" data-type="Term" data-itemid='0'>
-							<input class="tabindex flash_RD_btn" id="Term_radio" type="radio" name="flashRadio" data-type="Term" data-itemid="0" checked="checked" aria-label="Question, to change the selection press up or down arrow." /> 
-		                    <span class="radio checked"></span>
-		                    <label for="Term_radio">Question</label>
-		            </section>
+					<fieldset>
+						<legend>Card side view</legend>
+						<section id="TermRB" data-type="Term" data-itemid='0'>
+							<input class="flash_RD_btn" id="Term_radio" type="radio" name="flashRadio" data-type="Term" data-itemid="0" checked="checked" />
+				                    <span class="radio checked"></span>
+				                    <label for="Term_radio">Question</label>
+				            </section>
 
-		            <section id="DefinationRB" data-type="Defination" data-itemid='0'>
-		            		<input  class="tabindex flash_RD_btn" id="Defination_radio" type="radio" name="flashRadio" data-type="Defination" data-itemid="0" aria-label="Answer, to change the selection press up or down arrow."/> 
-		                    <span class="radio"></span>
-		                    <label for="Defination_radio">Answer</label>
-		            </section>
-	        	</section>		
+				            <section id="DefinationRB" data-type="Defination" data-itemid='0'>
+				            		<input class="flash_RD_btn" id="Defination_radio" type="radio" name="flashRadio" data-type="Defination" data-itemid="0" />
+				                    <span class="radio"></span>
+				                    <label for="Defination_radio">Answer</label>
+				            </section>
+					</fieldset>
+	        		</section>		
 	        	<section id="card" class="card">
-	        		<button id="next" class="tabindex" data-type="Term" aria-label="To move next item, press the Enter or Spacebar key."><img src="../flipcard-main/images/next-arrow.svg" alt="" /></button>
 	    			<section id="cardFrontSide" class="front card" aria-hidden="false">    				
 	    			        <section class="cardContent scrollbar" >		        				        	
 	    			        	<section id="imageHolder" class="term-img-holder"></section>		        			
@@ -56,7 +58,7 @@
 			        		<section>
 		        				<span id="read" class="readMore tabindex" data-itemid='0' aria-label="Read more information">Read more</span>
 		        			</section>		        	
-			        		<button id="flipCardBtnf" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term">
+			        		<button id="flipCardBtnf" aria-label="Flip Card" class="flipCardBtn tabindex" data-type="Term">
 				        		<span id="flipCardf" class="flipCard" data-type="Term"><img src="../flipcard-main/images/flip-iconBack.svg" alt="" /></span>
 				        		<span id="flipf" class="flip">Flip Card</span>
 		        			</button>
@@ -71,19 +73,20 @@
 		        			<section>
 		        				<span id="read1" class="readMore tabindex" data-itemid='0' aria-label="Read more information" aria-hidden="true">Read more</span>
 		        			</section>
-		        			<button id="flipCardBtnb" aria-label="To flip the card, press the Enter or Spacebar key." class="flipCardBtn tabindex" data-type="Term" aria-hidden="true">
+		        			<button id="flipCardBtnb" aria-label="Flip Card" class="flipCardBtn tabindex" data-type="Term" aria-hidden="true">
 				        		<span id="flipCardb" class="flipCard" data-type="Term"><img src="../flipcard-main/images/flip-iconBack.svg" alt="" /></span>
 				        		<span id="flipb" class="flip">Flip Card</span>
 		        			</button>
 		        			
 					  </section>
-					 <button id="previous" class="tabindex disabled" data-type="Term" aria-label="To move previous item, press the Enter or Spacebar key."><img src="../flipcard-main/images/back-arrow.svg" alt="" /></button>   			
+					 <button id="previous" class="tabindex disabled" data-type="Term" aria-label="Previous Card" title="Previous Card" aria-disabled="true"><img src="../flipcard-main/images/back-arrow.svg" alt="" /></button>
+	        		<button id="next" class="tabindex" data-type="Term" aria-label="Next Card" title="Next Card"><img src="../flipcard-main/images/next-arrow.svg" alt="" /></button>   			
 	        	</section> 
 	        	        	
 			</section>		
 			<footer id="footer" class="headerFooter">
 				<section>
-					<button id="shuffleCardsBtn" class="tabindex" data-type="Term" aria-label="To shuffle the Cards, press the Enter or Spacebar key."><img src="../flipcard-main/images/suffle-btn.svg" alt="" /><span class="shuffleLabel">Shuffle Cards</span></button>
+					<button id="shuffleCardsBtn" class="tabindex" data-type="Term" aria-label="Shuffle Cards"><img src="../flipcard-main/images/suffle-btn.svg" alt="" /><span class="shuffleLabel">Shuffle Cards</span></button>
 		        	<p id="count" class=""><span id="currentCard"></span> of <span id="totalCards"></span> Cards</p>	
 				</section>							
 			</footer>
