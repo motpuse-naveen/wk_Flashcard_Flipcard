@@ -295,7 +295,10 @@ th{
     margin-top: -3px;
     margin-left:3px;
     pointer-events: none;
+}
 
+#chkView fieldset section label{
+  cursor: pointer;
 }
 
 .radio.checked {
