@@ -265,7 +265,8 @@
       $zoomFrontBtn.addClass('disabled');
       $zoomBackSideBtn.removeClass('disabled');
       removeTabIndex(); 
-      addTabIndex();     
+      addTabIndex();
+      $('#flipCardBtnb').focus();
     }
     else {         
       $card.flip(false);
@@ -278,6 +279,7 @@
       $zoomBackSideBtn.addClass('disabled');
       removeTabIndex(); 
       addTabIndex();
+      $('#flipCardBtnf').focus();
     }
   };
  
@@ -529,8 +531,8 @@
     });
     $("#chkView").find('.radio').removeClass('checked');
     if(front_back == 'front'){
-      $("#cardBackSide").attr('aria-hidden',true);
-      $("#cardFrontSide").attr('aria-hidden',false);
+      $("#cardBackSide").attr('aria-hidden',true).attr('tabindex', -1).css({'visibility':'hidden','pointer-events':'none'});
+      $("#cardFrontSide").attr('aria-hidden',false).removeAttr('tabindex').css({'visibility':'visible','pointer-events':'auto'});
       $("#termInfo").attr('aria-hidden', false).attr('aria-live', 'polite');
       $("#defnInfo").attr('aria-hidden', true).attr('aria-live', 'off');
       $("#cardBackSide").find('button,a,.tabindex,[role="button"]').attr('tabindex',-1).attr('aria-hidden',true);
@@ -553,8 +555,8 @@
       $prevBtn.attr('data-type',DATA_TYPE_TERM);
       $('#cardFrontSide').find('.flipCardBtn').attr('data-type',DATA_TYPE_TERM);
     }else if(front_back == 'back'){
-      $("#cardBackSide").attr('aria-hidden',false);
-      $("#cardFrontSide").attr('aria-hidden',true);
+      $("#cardBackSide").attr('aria-hidden',false).removeAttr('tabindex').css({'visibility':'visible','pointer-events':'auto'});
+      $("#cardFrontSide").attr('aria-hidden',true).attr('tabindex', -1).css({'visibility':'hidden','pointer-events':'none'});
       $("#termInfo").attr('aria-hidden', true).attr('aria-live', 'off');
       $("#defnInfo").attr('aria-hidden', false).attr('aria-live', 'polite');
       $("#cardFrontSide").find('button,a,.tabindex,[role="button"]').attr('tabindex',-1).attr('aria-hidden',true);
