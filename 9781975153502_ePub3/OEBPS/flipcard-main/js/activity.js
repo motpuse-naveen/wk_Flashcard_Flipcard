@@ -26,6 +26,7 @@
   var isNavAnimating = false;
   var NAV_FADE_MS = 200;
   var NAV_FADE_OUT_OPACITY = 0.2;
+  var liveClearTimer = null;
 
   // Const
   var DATA_TYPE_TERM = 'Term';
@@ -165,6 +166,7 @@
         }
         EnableLeftArrow();
         addTabIndex();
+        announceFlipLive('front');
       }, function() {
         isNavAnimating = false;
       });
@@ -190,6 +192,7 @@
         }
         EnableRightArrow();
         addTabIndex();
+        announceFlipLive('front');
       }, function() {
         isNavAnimating = false;
       });
@@ -270,6 +273,26 @@
     timerId = setTimeout(focusNow, 650);
   }
 
+  function announceFlipLive(sideLabel) {
+    var $liveInfo = $('#liveInfo');
+    if (!$liveInfo.length) return;
+    var countText = $.trim($footer.find('#count').text()) || ($.trim($('#currentCard').text()) + ' of ' + $.trim($('#totalCards').text()) + ' Cards');
+    var label = sideLabel === 'back' ? 'Answer' : 'Question';
+    var message = 'Flip card ' + label + ' side, ' + countText + '.';
+    if (liveClearTimer) {
+      clearTimeout(liveClearTimer);
+      liveClearTimer = null;
+    }
+    $liveInfo.text('');
+    setTimeout(function() {
+      $liveInfo.text(message);
+      liveClearTimer = setTimeout(function() {
+        $liveInfo.text('');
+        liveClearTimer = null;
+      }, 1200);
+    }, 20);
+  }
+
   function handleFlipCardBtnEvents(e) {
     if (e.type === 'keyup' && (e.keyCode !== 13 && e.keyCode !== 32))
       return false;
@@ -286,6 +309,7 @@
       $zoomBackSideBtn.removeClass('disabled');
       removeTabIndex(); 
       addTabIndex();
+      announceFlipLive('back');
       focusAfterFlipAnimation('#flipCardBtnb');
     }
     else {         
@@ -299,6 +323,7 @@
       $zoomBackSideBtn.addClass('disabled');
       removeTabIndex(); 
       addTabIndex();
+      announceFlipLive('front');
       focusAfterFlipAnimation('#flipCardBtnf');
     }
   };
