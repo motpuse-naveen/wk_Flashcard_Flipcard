@@ -75,14 +75,6 @@
     MainActivity.setParameters();
     setTimeout(function(){$("#imageHolder .img-Term").removeAttr('style');},50); 
 
-    var IsTouchDevice = is_touch_device();
-    if(IsTouchDevice){
-      $('#Term_radio').attr('aria-label', 'Question, Selected');
-      $('#Defination_radio').attr('aria-label', 'Answer, Selected');
-    }else{
-      $('#Term_radio').attr('aria-label','Question, to change the selection press up or down arrow.');
-      $('#Defination_radio').attr('aria-label','Answer, to change the selection press up or down arrow.');
-    }
   }
   function is_touch_device() {
     var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
