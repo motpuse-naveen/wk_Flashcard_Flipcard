@@ -317,6 +317,21 @@ th{
     background: url(../images/radio-active.svg);   
 }
 
+#chkView fieldset > section.disabled {
+    opacity: 0.45;
+    pointer-events: none;
+    cursor: default;
+}
+
+#chkView fieldset > section.disabled label {
+    cursor: default;
+}
+
+.flipCardBtn.disabled {
+    visibility: hidden;
+    pointer-events: none;
+}
+
 #chkView fieldset > section {
     display: inline-block;
     /* cursor: pointer; */

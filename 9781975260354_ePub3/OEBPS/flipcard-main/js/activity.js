@@ -103,12 +103,41 @@
     $readMoreLnk.on('click', handleReadMoreLnkEvents);  
   };
 
+  function hasDefinition(index) {
+    var def = dataObject[index] && dataObject[index].defination;
+    if (!def || def.length === 0) {
+      return false;
+    }
+    for (var i = 0; i < def.length; i++) {
+      var phase = $.trim((def[i].phase || '').replace(/<[^>]*>/g, ''));
+      var title = $.trim(def[i].title || '');
+      if (phase !== '' || title !== '') {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function updateFlipAndAnswerControls(index) {
+    if (hasDefinition(index)) {
+      EnableFlipButtons();
+      EnableDefinitionRadio();
+    } else {
+      DisableFlipButtons();
+      DisableDefinitionRadio();
+    }
+  }
+
   function handleRadioButtonEvents(e) {
     if (e.type === 'keyup' && (e.keyCode !== 13 && e.keyCode !== 32))
       return false;
     var currentObj = $(this);
     var dataType = currentObj.attr('data-type');
     var dataItemid = currentObj.attr('data-itemid');
+
+    if (dataType === DATA_TYPE_DEFINATION && !hasDefinition(dataItemid)) {
+      return false;
+    }
     
     switch (dataType) {
         case DATA_TYPE_TERM:
@@ -298,6 +327,9 @@
       return false;
     var dataType = $flipCardBtn.attr('data-type');
     var dataItemid = $flipCardBtn.attr('data-itemid');
+    if (dataType == DATA_TYPE_TERM && !hasDefinition(nSlideCounter)) {
+      return false;
+    }
     if(dataType == DATA_TYPE_TERM){
       mangeDefinationInfo(nSlideCounter);
       $card.flip(true);
@@ -422,10 +454,14 @@
       DisableSoundButton();
     }
     imageHolder.find('.zoomImage').on('click', handleZoomImgBtnEvents);
+    updateFlipAndAnswerControls(index);
     setFlipBtnCenter();
   }
   
   function mangeDefinationInfo(index) {
+    if (!hasDefinition(index)) {
+      return;
+    }
     var container = $('#defnInfo');
     var imageHolder = $('#imageHolderb');
     var cardInfo = '<p style="position:absolute;opacity:0 !important;font-size:12px;">Flip card back side, '+ $footer.find("#count").text()+'.</p>';
@@ -589,8 +625,12 @@
         }
         $c.removeAttr('aria-hidden');
       });
-      $("#flipCardBtnf").attr('tabindex',0);
-      $("#flipCardBtnb").attr('tabindex',-1);
+      if ($flipCardBtn.filter('#flipCardBtnf').hasClass('disabled')) {
+        $("#flipCardBtnf").attr('tabindex', -1);
+      } else {
+        $("#flipCardBtnf").attr('tabindex', 0);
+      }
+      $("#flipCardBtnb").attr('tabindex', -1);
       $termRB.find('.radio').addClass('checked');
       $('.flash_RD_btn').attr('checked',false);
       document.getElementById("Term_radio").checked = true;
@@ -613,11 +653,21 @@
         }
         $c.removeAttr('aria-hidden');
       });
-      $("#flipCardBtnb").attr('tabindex',0);
-      $("#flipCardBtnf").attr('tabindex',-1);
-      $definationRB.find('.radio').addClass('checked');
-      $('.flash_RD_btn').attr('checked',false);
-      document.getElementById("Defination_radio").checked = true;
+      if ($flipCardBtn.filter('#flipCardBtnb').hasClass('disabled')) {
+        $("#flipCardBtnb").attr('tabindex', -1);
+      } else {
+        $("#flipCardBtnb").attr('tabindex', 0);
+      }
+      $("#flipCardBtnf").attr('tabindex', -1);
+      if (hasDefinition(nSlideCounter)) {
+        $definationRB.find('.radio').addClass('checked');
+        $('.flash_RD_btn').attr('checked', false);
+        document.getElementById("Defination_radio").checked = true;
+      } else {
+        $termRB.find('.radio').addClass('checked');
+        $('.flash_RD_btn').attr('checked', false);
+        document.getElementById("Term_radio").checked = true;
+      }
       $definationRB.attr('data-type',DATA_TYPE_DEFINATION);
       $nextBtn.attr('data-type',DATA_TYPE_DEFINATION);
       $prevBtn.attr('data-type',DATA_TYPE_DEFINATION);
@@ -690,6 +740,41 @@
         "pointer-events": "none",
         "cursor": "default"
     });      
+  }
+
+  function EnableFlipButtons() {
+    $flipCardBtn.removeClass("disabled").removeAttr("aria-disabled").css({
+      "pointer-events": "auto",
+      "visibility": "visible"
+    });
+  }
+
+  function DisableFlipButtons() {
+    $flipCardBtn.addClass("disabled").attr("aria-disabled", "true").css({
+      "pointer-events": "none",
+      "visibility": "hidden"
+    });
+  }
+
+  function EnableDefinitionRadio() {
+    $definationRB.removeClass("disabled").removeAttr("aria-disabled").css({
+      "pointer-events": "auto",
+      "cursor": "pointer"
+    });
+    $("#Defination_radio").prop("disabled", false);
+  }
+
+  function DisableDefinitionRadio() {
+    $definationRB.addClass("disabled").attr("aria-disabled", "true").css({
+      "pointer-events": "none",
+      "cursor": "default"
+    });
+    $("#Defination_radio").prop("disabled", true);
+    if (document.getElementById("Defination_radio").checked) {
+      document.getElementById("Term_radio").checked = true;
+      $("#chkView").find(".radio").removeClass("checked");
+      $termRB.find(".radio").addClass("checked");
+    }
   }
 
   function setFlipBtnCenter(){

@@ -612,32 +612,22 @@ var data = [
   },
   {
     "card_no": '42',
-    "term":'<p class="qn"><span class="qn1">1-S1A</span></p>',
+    "term":'<p class="dmn" id="c001"><b>Domain 1: Erythrocytes, The Erythron, Approach to Anemia</b></p><p class="T1"><b>Common Forms of Prenatal Iron</b></p><table class="table"><tr><td class="th"><p class="T2"><b>Intravenous (IV) Iron Formulation</b></p></td><td class="th"><p class="T2"><b>Infusion Time</b></p></td><td class="th"><p class="T2"><b>Advantage</b></p></td><td class="th"><p class="T2"><b>Side Effects</b></p></td></tr><tr><td><p class="td_p">Iron dextran (INFeD, Dexferrum)</p></td><td><p class="td_p">1-2 h</p></td><td><p class="td_p">Can provide total infusion</p></td><td><p class="td_p">Arthralgias, myalgias, anaphylaxis (high molecular weight); black box warning</p></td></tr><tr><td><p class="td_p">Iron sucrose (Venofer)</p></td><td><p class="td_p">15-30 min</p></td><td><p class="td_p">Well tolerated</p></td><td><p class="td_p">Nausea, headache, diarrhea, hypersensitivity reaction</p></td></tr><tr><td><p class="td_p">Ferric gluconate (Ferrlecit)</p></td><td><p class="td_p">30-60 min</p></td><td><p class="td_p">Safer than iron dextran</p></td><td><p class="td_p">Nausea, flushing, hypotension, hypersensitivity</p></td></tr><tr><td><p class="td_p">Ferumoxytol (Feraheme)</p></td><td><p class="td_p">15 min</p></td><td><p class="td_p">Can provide large dose in short time</p></td><td><p class="td_p">Diarrhea, nausea, headache, hypotension, rare anaphylaxis; black box warning</p></td></tr><tr><td><p class="td_p">Ferric carboxymaltose (Injectafer)</p></td><td><p class="td_p">15-30 min</p></td><td><p class="td_p">High single dose with fewer visits</p></td><td><p class="td_p">Nausea, flushing, injection-site reaction, hypophosphatemia</p></td></tr><tr><td><p class="td_p">Ferric derisomaltose (iron isomaltoside)</p></td><td><p class="td_p">15-30 min</p></td><td><p class="td_p">High single dose</p></td><td><p class="td_p">Nausea, rash, risk of hypophosphatemia (lower risk than ferric carboxymaltose)</p></td></tr></table>',
     "termaudio":"",
     "defnaudio":"",
     "imgurl":"",
     "imgalt":"",
     "imageonly":true,
-    "defination" :[
-      {
-        "title":"",
-        "phase": '<p class="dmn" id="c001"><b>Domain 1: Erythrocytes, The Erythron, Approach to Anemia</b></p><p class="T1"><b>Common Forms of Prenatal Iron</b></p><table class="table"><tr><td class="th"><p class="T2"><b>Intravenous (IV) Iron Formulation</b></p></td><td class="th"><p class="T2"><b>Infusion Time</b></p></td><td class="th"><p class="T2"><b>Advantage</b></p></td><td class="th"><p class="T2"><b>Side Effects</b></p></td></tr><tr><td><p class="td_p">Iron dextran (INFeD, Dexferrum)</p></td><td><p class="td_p">1-2 h</p></td><td><p class="td_p">Can provide total infusion</p></td><td><p class="td_p">Arthralgias, myalgias, anaphylaxis (high molecular weight); black box warning</p></td></tr><tr><td><p class="td_p">Iron sucrose (Venofer)</p></td><td><p class="td_p">15-30 min</p></td><td><p class="td_p">Well tolerated</p></td><td><p class="td_p">Nausea, headache, diarrhea, hypersensitivity reaction</p></td></tr><tr><td><p class="td_p">Ferric gluconate (Ferrlecit)</p></td><td><p class="td_p">30-60 min</p></td><td><p class="td_p">Safer than iron dextran</p></td><td><p class="td_p">Nausea, flushing, hypotension, hypersensitivity</p></td></tr><tr><td><p class="td_p">Ferumoxytol (Feraheme)</p></td><td><p class="td_p">15 min</p></td><td><p class="td_p">Can provide large dose in short time</p></td><td><p class="td_p">Diarrhea, nausea, headache, hypotension, rare anaphylaxis; black box warning</p></td></tr><tr><td><p class="td_p">Ferric carboxymaltose (Injectafer)</p></td><td><p class="td_p">15-30 min</p></td><td><p class="td_p">High single dose with fewer visits</p></td><td><p class="td_p">Nausea, flushing, injection-site reaction, hypophosphatemia</p></td></tr><tr><td><p class="td_p">Ferric derisomaltose (iron isomaltoside)</p></td><td><p class="td_p">15-30 min</p></td><td><p class="td_p">High single dose</p></td><td><p class="td_p">Nausea, rash, risk of hypophosphatemia (lower risk than ferric carboxymaltose)</p></td></tr></table>'
-      }
-    ]
+    "defination" :[]
   },
   {
     "card_no": '43',
-    "term":'<p class="qn"><span class="qn1">1-S1B</span></p>',
+    "term":'<p class="dmn"><b>Domain 1: Erythrocytes, Hemolytic Anemias, Enzymopathies</b></p><table class="table"><tr><td class="th" colspan="3"><p class="T2_c"><b>Partial List of Substances Thought to Be Unsafe With G6PD Deficiency</b></p></td></tr><tr><td><p class="td_p">Dapsone</p></td><td><p class="td_p">Fluroquinolones (ciprofloxacin, moxifloxacin, ofloxacin, etc)</p></td><td><p class="td_p">Methylene blue</p></td></tr><tr><td><p class="td_p">Nalidixic acid</p></td><td><p class="td_p">Nitrofurantoin</p></td><td><p class="td_p">Phenazopyridine (Pyridium)</p></td></tr><tr><td><p class="td_p">Primaquine, tafenoquine</p></td><td><p class="td_p">Rasburicase, pegloticase</p></td><td><p class="td_p">Sulfonylureas (sulfamethoxazole)</p></td></tr><tr><td><p class="td_p">Fava beans</p></td><td><p class="td_p">Naphthalene</p></td><td><p class="td_p">Henna compounds</p></td></tr></table>',
     "termaudio":"",
     "defnaudio":"",
     "imgurl":"",
     "imgalt":"",
     "imageonly":true,
-    "defination" :[
-      {
-        "title":"",
-        "phase": '<p class="dmn"><b>Domain 1: Erythrocytes, Hemolytic Anemias, Enzymopathies</b></p><table class="table"><tr><td class="th" colspan="3"><p class="T2_c"><b>Partial List of Substances Thought to Be Unsafe With G6PD Deficiency</b></p></td></tr><tr><td><p class="td_p">Dapsone</p></td><td><p class="td_p">Fluroquinolones (ciprofloxacin, moxifloxacin, ofloxacin, etc)</p></td><td><p class="td_p">Methylene blue</p></td></tr><tr><td><p class="td_p">Nalidixic acid</p></td><td><p class="td_p">Nitrofurantoin</p></td><td><p class="td_p">Phenazopyridine (Pyridium)</p></td></tr><tr><td><p class="td_p">Primaquine, tafenoquine</p></td><td><p class="td_p">Rasburicase, pegloticase</p></td><td><p class="td_p">Sulfonylureas (sulfamethoxazole)</p></td></tr><tr><td><p class="td_p">Fava beans</p></td><td><p class="td_p">Naphthalene</p></td><td><p class="td_p">Henna compounds</p></td></tr></table>'
-      }
-    ]
+    "defination" :[]
   }
 ];
