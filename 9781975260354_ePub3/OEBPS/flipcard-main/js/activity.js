@@ -37,7 +37,7 @@
     dataObject = data;
     nCount = dataObject.length;
     nSlideCounter = 0;
-    
+    debugger;
     $termRB = $('#TermRB');
     $definationRB = $('#DefinationRB');
     $nextBtn = $('#next');
